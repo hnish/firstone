@@ -1,0 +1,10 @@
+git init
+git status
+git add .
+git branch <<branch_name>>
+git checkout <<branch_name>> : switch the working branch
+git merge <<branch_name>> on master
+
+
+<< touch >>
+.gitignore
