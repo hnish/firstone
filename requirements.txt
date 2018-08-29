@@ -45,6 +45,7 @@ datashape==0.5.4
 decorator==4.1.2
 dill==0.2.7.1
 distributed==1.19.1
+dj-database-url==0.5.0
 Django==2.0.2
 django-anymail==1.4
 django-bootstrap==0.2.4
@@ -63,6 +64,7 @@ glue-vispy-viewers==0.9
 glueviz==0.10.4
 gmpy2==2.0.8
 greenlet==0.4.12
+gunicorn==19.9.0
 h5py==2.7.0
 heapdict==1.0.0
 html5lib==0.999999999
@@ -219,6 +221,7 @@ wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.12.2
 wget==3.2
+whitenoise==4.0
 widgetsnbextension==3.0.2
 wrapt==1.10.11
 xlrd==1.1.0
