@@ -1,5 +1,8 @@
 .DS_Store
 
+djangoTest/settings/local.py
+*/local.py
+
 bin/
 include/
 pip-selfcheck.json
