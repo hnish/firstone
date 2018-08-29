@@ -9,3 +9,7 @@ git commit -m "<<comment here>>"
 
 << touch >>
 .gitignore
+
+
+<<memo>>
+
