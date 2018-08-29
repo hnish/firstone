@@ -25,8 +25,18 @@ SECRET_KEY = 'c$955$u^@x8gnimj=o5h4n(8)(4e9nknsx_$8)m5j*zo3kv*3d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangonhnish.herokuapp.com','www.face2face.club']
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'h.nishito@gmail.com' #my gmail username
+EMAIL_HOST_PASSWORD = 'j5desuyo' #my gmail password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "Hiroshi Nishito <h.nishito@gmail.com>"
+
+
+ADMINS = [('Hiroshi', EMAIL_HOST_USER)]
+MANAGERS = ADMINS
 
 # Application definition
 
