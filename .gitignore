@@ -3,6 +3,8 @@
 djangoTest/settings/local.py
 */local.py
 
+db.sqlite3
+
 bin/
 include/
 pip-selfcheck.json
