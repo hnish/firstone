@@ -6,12 +6,16 @@ git checkout <<branch_name>> : switch the working branch
 git merge <<branch_name>> on master
 git commit -m "<<comment here>>"
 
-
 git remote add origin https://github.com/hnish/firstone.git
 git push -u origin master
 (error)
 invalid username password
+-->second try: enter the username & password. made it!!
 
+if you change on the local, 
+1)git add .
+2)git commit -m "comment"
+3)git push
 
 << touch >>
 .gitignore
