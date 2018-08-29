@@ -3,3 +3,7 @@ https://www.codingforentrepreneurs.com/projects/heroku/login-heroku/#lecture
 
 
 https://github.com/codingforentrepreneurs/Guides/blob/master/all/Heroku_Django_Deployment_Guide.md
+
+
+
+<heroku create djangonhnish>
