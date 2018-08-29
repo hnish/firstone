@@ -10,6 +10,14 @@ https://github.com/codingforentrepreneurs/Guides/blob/master/all/Heroku_Django_D
 
 
 
+<SECRET KEY>
+$ heroku config:set SECRET_KEY=<your-django-secret-key>
+$ heroku config:set EMAIL_HOST_PASSWORD = 'youremailpassword'
+
+
+SECRET_KEY = os.environ.get('SECRET_KEY', 'SOME+RANDOM+KEY(z9+3vnm(jb0u@&w68t#5_e8s9-lbfhv-')  
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
 <<Error>>
 remote:  !     Error while running '$ python manage.py collectstatic --noinput'.
 remote:        See traceback above for details.
@@ -33,3 +41,6 @@ remote: !   Push rejected to <your app>.
  heroku config:set DISABLE_COLLECTSTATIC=1
 Setting DISABLE_COLLECTSTATIC and restarting ⬢ <your app>... done, v3
 DISABLE_COLLECTSTATIC: 1
+
+
+

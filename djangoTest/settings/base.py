@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c$955$u^@x8gnimj=o5h4n(8)(4e9nknsx_$8)m5j*zo3kv*3d'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['djangonhnish.herokuapp.com','www.face2face.club']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'h.nishito@gmail.com' #my gmail username
-EMAIL_HOST_PASSWORD = 'j5desuyo' #my gmail password
+EMAIL_HOST_PASSWORD = os.environ.get('Email_Password') #my gmail password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "Hiroshi Nishito <h.nishito@gmail.com>"
@@ -95,6 +95,7 @@ DATABASES = {
 import dj_database_url
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
+# DATABASES['default']['CONN_MAX_AGE'] = 500
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
