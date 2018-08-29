@@ -7,6 +7,12 @@ git merge <<branch_name>> on master
 git commit -m "<<comment here>>"
 
 
+git remote add origin https://github.com/hnish/firstone.git
+git push -u origin master
+(error)
+invalid username password
+
+
 << touch >>
 .gitignore
 
