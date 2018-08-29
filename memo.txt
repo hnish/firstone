@@ -20,6 +20,3 @@ if you change on the local,
 << touch >>
 .gitignore
 
-
-<<memo>>
-
